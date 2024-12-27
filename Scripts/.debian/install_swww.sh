@@ -39,7 +39,7 @@ if pkg_installed "zsh"; then
 fi
 if pkg_installed "fish"; then
   echo -e "\033[0;32m[+]\033[0m fish detected..."
-  sudo mkdir -p /usr/shaare/fish/vendor_completions.d/
+  sudo mkdir -p /usr/share/fish/vendor_completions.d/
   sudo cp completions/swww.fish /usr/share/fish/vendor_completions.d/swww.fish
 fi
 
