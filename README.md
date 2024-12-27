@@ -44,10 +44,14 @@ Notably, this fork includes the following key changes:
 
 Initially, this project was intended to remain compatible with the current version of HyprDots. However, as development progressed, maintaining compatibility became difficult.
 
-## Installation
+<a id="installation"></a>  
+<img src="Source/assets/Installation.gif" width="200"/>
+---
 
 The installation script is designed for a minimal [Debian SID](https://wiki.debian.org/DebianUnstable) install, but **may** work on some [Debian-based distros](https://www.debian.org/derivatives/index.html).
 While installing HyDE alongside another [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) should work, due to it being a heavily customized setup, it **will** conflict with your [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt) theming, [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https://wiki.archlinux.org/title/GRUB), etc. and is at your own risk.
+
+For Nixos support there is a separate project being maintained @ [Hydenix](https://github.com/richen604/hydenix/tree/main)
 
 > [!IMPORTANT]
 > For now, support of NVIDIA cards is disabled.
@@ -80,7 +84,10 @@ cd ~/HyDE/Scripts
 Please reboot after the install script completes and takes you to the SDDM login screen (or black screen) for the first time.
 For more details, please refer to the [installation wiki](https://github.com/prasanthrangan/hyprdots/wiki/Installation) for Arch Linux.
 
-### Updating
+<a id="updating"></a>  
+<img src="Source/assets/Updating.gif" width="200"/>
+---
+
 To update HyDE, you will need to pull the latest changes from GitHub and restore the configs by running the following commands:
 
 ```shell
@@ -98,10 +105,12 @@ git pull
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Themes
+<a id="themes"></a>  
+<img src="Source/assets/Themes.gif" width="200"/>
+---
 
 All our official themes are stored in a separate repository, allowing users to install them using themepatcher.
-For more information, visit [prasanthrangan/hyde-themes](https://github.com/prasanthrangan/hyde-themes).
+For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-Project/hyde-themes). 
 
 <div align="center">
   <table><tr><td>
@@ -132,7 +141,9 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Styles
+<a id="styles"></a>  
+<img src="Source/assets/Styles.gif" width="200"/>
+---
 
 <div align="center"><table><tr>Theme Select</tr><tr><td>
 <img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_select_1.png"/></td><td>
@@ -178,7 +189,10 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Keybindings
+<a id="keybindings"></a>  
+<img src="Source/assets/Keybindings.gif" width="200"/>
+---
+
 
 <div align="center">
 
@@ -215,6 +229,7 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Launch wallbash mode select menu (rofi) |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> | Launch theme select menu (rofi) |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | Launch style select menu (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | Launch theme style select menu (rofi) |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd> | Launch wallpaper select menu (rofi) |
 | <kbd>Super</kbd> + <kbd>V</kbd> | Launch clipboard (rofi) |
 | <kbd>Super</kbd> + <kbd>K</kbd> | Switch keyboard layout |
