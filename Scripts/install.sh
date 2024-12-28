@@ -84,7 +84,6 @@ if [ ${flg_Install} -eq 1 ]; then
                             |___|
 
 EOF
-
     #----------------#
     # get user prefs #
     #----------------#

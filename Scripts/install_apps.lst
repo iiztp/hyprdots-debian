@@ -1,12 +1,10 @@
 #--------------------------------------------------- // Compilation for git
 build-essential
 git
-ninja-build
 meson
+libjxl-dev
 libcairo2-dev
-libpango1.0-dev
-jq
-make
+libsdbus-c++-dev
 cmake
 wayland-protocols
 libwayland-dev
@@ -21,6 +19,7 @@ libinput-dev
 xwayland
 libxcursor-dev
 imagemagick
+libmagic-dev
 hwdata
 curl
 liblz4-dev
@@ -28,18 +27,19 @@ libpixman-1-dev
 libgbm-dev
 libdisplay-info-dev
 libpugixml-dev
-golang-gir-gio-2.0-dev
+libre2-dev
 libxcb-composite0-dev
 libxcb-errors-dev
-libxcb-render-util0-dev
 libxcb-res0-dev
 libxcb-icccm4-dev
 libxcb-util-dev
+libxcb-keysyms1-dev
 libxcb-xkb-dev
 libxcb-ewmh-dev
 libxcb-randr0-dev
 libxcb-cursor-dev
 libxcb-xinerama0-dev
+check
 libstartup-notification0-dev
 libmpdclient-dev
 libnl-3-dev
@@ -56,7 +56,6 @@ playerctl
 libplayerctl-dev
 pipx
 lm-sensors
-tlp
 scdoc
 
 #--------------------------------------------------- // System
