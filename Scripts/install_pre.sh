@@ -35,11 +35,11 @@ if pkg_installed "grub-common" && [ -f /boot/grub/grub.cfg ]; then
         sudo cp /etc/default/grub /etc/default/grub.t2.bkp
         sudo cp /boot/grub/grub.cfg /boot/grub/grub.t2.bkp
 
-        if nvidia_detect; then
-            echo -e "\033[0;32m[BOOTLOADER]\033[0m nvidia detected, adding nvidia_drm.modeset=1 to boot option..."
-            gcld=$(grep "^GRUB_CMDLINE_LINUX_DEFAULT=" "/etc/default/grub" | cut -d'"' -f2 | sed 's/\b nvidia_drm.modeset=.\b//g')
-            sudo sed -i "/^GRUB_CMDLINE_LINUX_DEFAULT=/c\GRUB_CMDLINE_LINUX_DEFAULT=\"${gcld} nvidia_drm.modeset=1\"" /etc/default/grub
-        fi
+        #if nvidia_detect; then
+        #    echo -e "\033[0;32m[BOOTLOADER]\033[0m nvidia detected, adding nvidia_drm.modeset=1 to boot option..."
+        #    gcld=$(grep "^GRUB_CMDLINE_LINUX_DEFAULT=" "/etc/default/grub" | cut -d'"' -f2 | sed 's/\b nvidia_drm.modeset=.\b//g')
+        #    sudo sed -i "/^GRUB_CMDLINE_LINUX_DEFAULT=/c\GRUB_CMDLINE_LINUX_DEFAULT=\"${gcld} nvidia_drm.modeset=1\"" /etc/default/grub
+        #fi
 
         echo -e "Select grub theme:\n[1] Retroboot (dark)\n[2] Pochita (light)"
         read -p " :: Press enter to skip grub theme <or> Enter option number : " grubopt
