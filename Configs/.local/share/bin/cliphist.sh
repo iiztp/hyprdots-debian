@@ -180,4 +180,8 @@ case "${main_action}" in
     echo "Invalid action"
     exit 1
     ;;
+<<<<<<< HEAD
 esac
+=======
+esac
+>>>>>>> hyprdots/main

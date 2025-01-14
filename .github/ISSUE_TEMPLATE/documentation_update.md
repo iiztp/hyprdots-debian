@@ -2,9 +2,7 @@
 name: Documentation update
 about: Propose a change to the project documentation
 title: "[Docs]: Short description of the change"
-labels: documentation
-assignees: ''
-
+labels: "documentation, needs review"
 ---
 
 ## Documentation Update

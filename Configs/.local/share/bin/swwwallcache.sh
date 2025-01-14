@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/usr/bin/env bash
+=======
+#!/usr/bin/env sh
+>>>>>>> hyprdots/main
 
 
 #// set variables

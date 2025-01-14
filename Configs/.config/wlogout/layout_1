@@ -1,6 +1,10 @@
 {
     "label" : "lock",
+<<<<<<< HEAD
     "action" : "hyprlock",
+=======
+    "action" : "swaylock",
+>>>>>>> hyprdots/main
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -14,7 +18,11 @@
 
 {
     "label" : "suspend",
+<<<<<<< HEAD
     "action" : "hyprlock -f && systemctl suspend",
+=======
+    "action" : "swaylock -f && systemctl suspend",
+>>>>>>> hyprdots/main
     "text" : "Suspend",
     "keybind" : "u"
 }

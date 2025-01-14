@@ -2,7 +2,11 @@
 configuration {
     modi:                        "drun,filebrowser,window";
     show-icons:                  true;
+<<<<<<< HEAD
     display-drun:                " ";
+=======
+    display-drun:                " ";
+>>>>>>> hyprdots/main
     display-run:                 " ";
     display-filebrowser:         " ";
     display-window:              " ";

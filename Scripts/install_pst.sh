@@ -15,20 +15,20 @@ fi
 if pkg_installed sddm; then
 
     echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m detected // sddm"
-    sudo mkdir -p /etc/sddm.conf.d
+    if [ ! -d /etc/sddm.conf.d ]; then
+        sudo mkdir -p /etc/sddm.conf.d
+    fi
 
     if [ ! -f /etc/sddm.conf.d/kde_settings.t2.bkp ]; then
         echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m configuring sddm..."
-        echo -e "Select sddm theme:\n[1] Candy\n[2] Chilly\n[3] Corners"
+        echo -e "Select sddm theme:\n[1] Candy\n[2] Corners"
         read -p " :: Enter option number : " sddmopt
 
         case $sddmopt in
         1) sddmtheme="Candy" ;;
-        2) sddmtheme="Chilly" ;;
         *) sddmtheme="Corners" ;;
         esac
 
-        sudo mkdir -p /usr/share/sddm/themes/
         sudo tar -xzf ${cloneDir}/Source/arcs/Sddm_${sddmtheme}.tar.gz -C /usr/share/sddm/themes/
         sudo touch /etc/sddm.conf.d/kde_settings.conf
         sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp

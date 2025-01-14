@@ -1,6 +1,10 @@
 {
     "label" : "lock",
+<<<<<<< HEAD
     "action" : "hyprlock",
+=======
+    "action" : "swaylock",
+>>>>>>> hyprdots/main
     "text" : "Lock",
     "keybind" : "l"
 }

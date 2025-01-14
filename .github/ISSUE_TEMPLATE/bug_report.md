@@ -2,9 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: "[Bug]: Short description of the issue"
-labels: bug
-assignees: ''
-
+labels: "bug, needs triage"
 ---
 
 ## Bug Report
