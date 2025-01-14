@@ -1,6 +1,7 @@
 #--------------------------------------------------- // Compilation for git
 build-essential
 git
+jq
 meson
 libjxl-dev
 libcairo2-dev

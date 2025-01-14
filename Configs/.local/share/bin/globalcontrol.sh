@@ -116,15 +116,9 @@ fi
 pkg_installed()
 {
     local pkgIn=$1
-<<<<<<< HEAD
     if dpkg -l | grep -qw "${pkgIn}" ; then
         return 0
     elif dpkg -l | grep -qw "flatpak" && flatpak info "${pkgIn}" &> /dev/null ; then
-=======
-    if pacman -Qi "${pkgIn}" &> /dev/null ; then
-        return 0
-    elif pacman -Qi "flatpak" &> /dev/null && flatpak info "${pkgIn}" &> /dev/null ; then
->>>>>>> hyprdots/main
         return 0
     elif command -v "${pkgIn}" &> /dev/null ; then
         return 0
@@ -133,20 +127,6 @@ pkg_installed()
     fi
 }
 
-<<<<<<< HEAD
-=======
-get_aurhlpr()
-{
-    if pkg_installed yay
-    then
-        aurhlpr="yay"
-    elif pkg_installed paru
-    then
-        aurhlpr="paru"
-    fi
-}
-
->>>>>>> hyprdots/main
 set_conf()
 {
     local varName="${1}"
