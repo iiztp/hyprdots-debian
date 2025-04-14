@@ -1,52 +1,50 @@
-# Name: Catppuccin Mocha 🌿
-# Author: Pocco81 (https://github.com/Pocco81)
-# License: MIT
-# Upstream: https://github.com/catppuccin/kitty/blob/main/mocha.conf
+  GNU nano 8.4                                                                      theme.toml
+# Alacritty Theme: Catppuccin Mocha 🌿
+# Adapted from Kitty theme
+# Author: Catppuccin Org (https://github.com/catppuccin)
 
 [colors]
-# The basic colors
-primary = { background = '#1E1E2E', foreground = '#CDD6F4' }
 
-# Selection colors
-selection = { text = '#1E1E2E', background = '#F5E0DC' }
+# Basic colors
+primary = { background = "#1e1e2e", foreground = "#cdd6f4" }
 
-# Cursor colors
-cursor = { text = '#1E1E2E', cursor = '#F5E0DC' }
+# Selection
+selection = { text = "#1e1e2e", background = "#f5e0dc" }
 
-# Normal terminal colors
+# Cursor
+cursor = { text = "#1e1e2e", cursor = "#f5e0dc" }
+
+# Normal colors
 [colors.normal]
-black   = '#43465A'  # color0
-red     = '#F38BA8'  # color1
-green   = '#A6E3A1'  # color2
-yellow  = '#F9E2AF'  # color3
-blue    = '#87B0F9'  # color4
-magenta = '#F5C2E7'  # color5
-cyan    = '#94E2D5'  # color6
-white   = '#CDD6F4'  # color7
+black   = "#45475a"  # color0
+red     = "#f38ba8"  # color1
+green   = "#a6e3a1"  # color2
+yellow  = "#f9e2af"  # color3
+blue    = "#89b4fa"  # color4
+magenta = "#f5c2e7"  # color5
+cyan    = "#94e2d5"  # color6
+white   = "#bac2de"  # color7
 
-# Bright terminal colors
+# Bright colors
 [colors.bright]
-black   = '#43465A'  # color8
-red     = '#F38BA8'  # color9
-green   = '#A6E3A1'  # color10
-yellow  = '#F9E2AF'  # color11
-blue    = '#87B0F9'  # color12
-magenta = '#F5C2E7'  # color13
-cyan    = '#94E2D5'  # color14
-white   = '#A1A8C9'  # color15
+black   = "#585b70"  # color8
+red     = "#f38ba8"  # color9
+green   = "#a6e3a1"  # color10
+yellow  = "#f9e2af"  # color11
+blue    = "#89b4fa"  # color12
+magenta = "#f5c2e7"  # color13
+cyan    = "#94e2d5"  # color14
+white   = "#a6adc8"  # color15
 
-# URL underline color
-url = { color = '#B4BEFE' }
+# Optional: search and vi mode colors for extra polish
+[colors.search.matches]
+foreground = "#1e1e2e"
+background = "#a6e3a1"
 
-# Marks (custom highlights in the terminal, adapted from Kitty)
-[colors.mark1]
-text = '#1E1E2E'
-background = '#87B0F9'
+[colors.search.focused_match]
+foreground = "#1e1e2e"
+background = "#f9e2af"
 
-[colors.mark2]
-text = '#1E1E2E'
-background = '#CBA6F7'
-
-[colors.mark3]
-text = '#1E1E2E'
-background = '#74C7EC'
+[colors.vi_mode_cursor]
+text = "#1e1e2e"
+cursor = "#f5e0dc"

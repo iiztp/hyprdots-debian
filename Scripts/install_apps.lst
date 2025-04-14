@@ -40,6 +40,7 @@ libxcb-ewmh-dev
 libxcb-randr0-dev
 libxcb-cursor-dev
 libxcb-xinerama0-dev
+libspng-dev
 check
 libstartup-notification0-dev
 libmpdclient-dev

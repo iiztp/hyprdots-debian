@@ -1,5 +1,3 @@
-import = ["./theme.toml"]
-
 [font]
 size = 9.0
 
@@ -18,3 +16,6 @@ family = "CaskaydiaCove Nerd Font Mono"
 [window.padding]
 x = 25
 y = 25
+
+[general]
+import = ["./theme.toml"]
